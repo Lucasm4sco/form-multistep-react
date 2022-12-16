@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import { GrFormNext, GrFormPrevious} from 'react-icons/gr';
 import { FiSend } from 'react-icons/fi'
 import { UseForm } from './hooks/useForm';
@@ -32,6 +32,12 @@ const App = () => {
   
   const {currentStep, currentComponent, changeStep, isFirstStep, isLastStep} = UseForm(formComponents);
 
+  const sendData = useCallback(() => {
+    alert('Sua avaliação foi realizada, Agradeçemos pelo feedback!');
+    setData(data);
+    changeStep(0);
+  }, [])
+
   return (
     <div className="app">
       <div className='header'>
@@ -59,7 +65,7 @@ const App = () => {
               <GrFormNext />
             </button>
             ): (
-              <button type='submit'>
+              <button type='submit' id='send-data' onClick={sendData}>
                 <span>Enviar</span>
                 <FiSend />
               </button>

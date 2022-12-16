@@ -11,6 +11,10 @@
     margin-bottom: .5rem;
 }
 
+.thanks-container p span {
+    font-weight: 500;
+}
+
 .thanks-container h3 {
     margin: 1rem 0;
 }
@@ -63,7 +67,7 @@
 }
 
 .neutral {
-    fill: gray;
+    fill: #918b8b;
 }
 
 .satisfied {

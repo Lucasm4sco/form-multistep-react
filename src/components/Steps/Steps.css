@@ -35,5 +35,22 @@
 }
 
 .active > svg {
-    fill: #7076f4
+    fill: #7076f4;
+    stroke: #595eb6;
+}
+
+@media (max-width: 360px) {
+    .step {
+        width: 90px;
+        padding: .2rem;
+    }
+
+    .step svg {
+        font-size: 1.2rem;
+        margin-bottom: .2rem;
+    }
+
+    .step p {
+        font-size: .8rem;
+    }
 }

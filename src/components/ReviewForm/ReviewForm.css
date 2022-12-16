@@ -41,3 +41,13 @@
     top: 20px;
     left: 30px;
 }
+
+@media (max-width: 360px) {
+    .form-control.score-container {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .form-control.score-container label {
+        width: 40%;
+    }
+}

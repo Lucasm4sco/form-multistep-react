@@ -14,7 +14,7 @@ const Thanks = ({data}) => {
     <div className='thanks-container'>
       <h2>Falta pouco...</h2>
       <p>A sua opinião é muito importante, em breve você receberá um cupom com 10% de desconto para a sua próxima compra.</p>
-      <p>Para concluir sua avaliação clique no botão de Enviar abaixo.</p>
+      <p>Para concluir sua avaliação clique no botão de <span>Enviar</span>.</p>
       <h3>Resumo da avaliação: </h3>
       <p className='review-data align'>
         <span>Satisfação com o produto: </span>
